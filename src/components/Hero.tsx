@@ -75,7 +75,7 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Column 2: Center Stacked Typography List (Matching Reference Image) */}
+          {/* Column 2: Center Stacked Typography List */}
           <div className="lg:col-span-6 space-y-3 my-auto">
             <div className="space-y-1">
               {disciplines.map((d) => {

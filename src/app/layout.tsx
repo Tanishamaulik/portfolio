@@ -9,14 +9,20 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Tanisha Maulik | Full-Stack Engineer & Creative Developer",
-  description: "Portfolio of Tanisha Maulik - Full-Stack Engineer specializing in Next.js, TypeScript, AI Workspaces, and modern dark-aesthetic web experiences.",
-  keywords: ["Tanisha Maulik", "Full Stack Developer", "Software Engineer", "Next.js", "React", "TypeScript", "Portfolio"],
+  title: "Tanisha Maulik | MSc Cybersecurity Risk Management & IT Developer",
+  description: "Portfolio of Tanisha Maulik — MSc Cybersecurity Risk Management (NUIG) & B.Tech IT (RAIT). Specializing in threat detection, network security, risk management, and web development.",
+  keywords: ["Tanisha Maulik", "Cybersecurity", "Risk Management", "SOC Analyst", "Information Technology", "Galway Ireland", "Next.js", "React"],
   authors: [{ name: "Tanisha Maulik" }],
+  icons: {
+    icon: "/tanisha-profile.jpg",
+    shortcut: "/tanisha-profile.jpg",
+    apple: "/tanisha-profile.jpg",
+  },
   openGraph: {
-    title: "Tanisha Maulik | Software Engineer Portfolio",
-    description: "Full-Stack Engineer & Creative Developer crafting dark-aesthetic high-performance web applications.",
+    title: "Tanisha Maulik | MSc Cybersecurity Risk Management",
+    description: "Cybersecurity & Risk Management post-graduate with hands-on experience in security analysis, networking, and software development.",
     type: "website",
+    images: ["/tanisha-profile.jpg"],
   },
 };
 
@@ -27,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scroll-smooth">
-      <body className={`${plusJakarta.className} bg-[#050505] text-zinc-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-200`}>
+      <body className={`${plusJakarta.className} bg-[#000000] text-zinc-100 antialiased selection:bg-red-500/30 selection:text-red-200`}>
         {children}
       </body>
     </html>
