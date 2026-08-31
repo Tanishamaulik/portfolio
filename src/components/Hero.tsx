@@ -20,10 +20,10 @@ const disciplines = [
     desc: "Hands-on threat detection, incident response, network troubleshooting, and Security Operations Center (SOC) analysis.",
   },
   {
-    id: "web-development",
-    name: "Web Development",
+    id: "software-development",
+    name: "Software Development",
     image: "/hero-staircase.jpg",
-    desc: "Building high-performance React & Next.js web applications, client solutions, and dark obsidian design systems.",
+    desc: "Building high-performance React & Next.js applications, software solutions, and dark obsidian design systems.",
   },
   {
     id: "crm-network-sec",
@@ -45,32 +45,32 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
           
           {/* Column 1: Left Index & Metadata */}
-          <div className="lg:col-span-2 space-y-8 font-mono text-xs text-zinc-400">
+          <div className="lg:col-span-2 space-y-8 font-mono text-xs text-slate-500">
             <div>
-              <span className="text-3xl font-extrabold text-white block mb-2 font-sans tracking-tight">001</span>
-              <span className="text-zinc-500 uppercase tracking-widest text-[10px] block">Key Services</span>
+              <span className="text-3xl font-extrabold text-slate-900 block mb-2 font-sans tracking-tight">001</span>
+              <span className="text-slate-400 uppercase tracking-widest text-[10px] block font-bold">Key Services</span>
             </div>
 
-            <div className="space-y-3 text-[11px] pt-4 border-t border-white/10">
+            <div className="space-y-3 text-[11px] pt-4 border-t border-slate-200">
               <div>
-                <span className="text-zinc-600 block text-[10px] uppercase">Postgrad</span>
-                <span className="text-zinc-200">MSc Cybersecurity Risk Management (NUIG)</span>
+                <span className="text-slate-400 block text-[10px] uppercase font-medium">Postgrad</span>
+                <span className="text-slate-800 font-semibold">MSc Cybersecurity Risk Management (NUIG)</span>
               </div>
               <div>
-                <span className="text-zinc-600 block text-[10px] uppercase">Undergrad</span>
-                <span className="text-zinc-200">B.Tech IT (RAIT)</span>
+                <span className="text-slate-400 block text-[10px] uppercase font-medium">Undergrad</span>
+                <span className="text-slate-800 font-semibold">B.Tech IT (DY Patil)</span>
               </div>
               <div>
-                <span className="text-zinc-600 block text-[10px] uppercase">Location</span>
-                <span className="text-zinc-200">Galway, Ireland</span>
+                <span className="text-slate-400 block text-[10px] uppercase font-medium">Location</span>
+                <span className="text-slate-800 font-semibold">Galway, Ireland</span>
               </div>
               <div>
-                <span className="text-zinc-600 block text-[10px] uppercase">Target Discipline</span>
-                <span className="text-red-500 font-bold">SOC / Risk Analyst</span>
+                <span className="text-slate-400 block text-[10px] uppercase font-medium">Target Discipline</span>
+                <span className="text-red-600 font-bold">SOC / Risk Analyst</span>
               </div>
             </div>
 
-            <p className="text-[11px] text-zinc-500 leading-relaxed font-sans pt-4 border-t border-white/10">
+            <p className="text-[11px] text-slate-500 leading-relaxed font-sans pt-4 border-t border-slate-200">
               {personal.availabilityStatus}
             </p>
           </div>
@@ -90,10 +90,10 @@ export default function Hero() {
                     transition={{ type: "spring", stiffness: 300, damping: 25 }}
                   >
                     <h2
-                      className={`text-3xl sm:text-5xl lg:text-5xl font-black tracking-tight transition-colors duration-300 ${
+                      className={`text-3xl sm:text-5xl lg:text-5xl font-black tracking-tight pb-1.5 leading-snug transition-colors duration-300 ${
                         isActive
-                          ? "text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.4)]"
-                          : "text-zinc-700 hover:text-zinc-400"
+                          ? "bg-gradient-to-r from-slate-950 via-slate-900 to-orange-600 bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.06)]"
+                          : "text-slate-300 hover:text-slate-600"
                       }`}
                     >
                       {d.name}
@@ -109,7 +109,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
-              className="text-sm text-zinc-400 max-w-md pt-4 font-sans font-normal leading-relaxed border-t border-white/10"
+              className="text-sm text-slate-600 max-w-md pt-4 font-sans font-normal leading-relaxed border-t border-slate-200"
             >
               {activeDiscipline.desc}
             </motion.p>
@@ -119,7 +119,7 @@ export default function Hero() {
           <div className="lg:col-span-4 space-y-6">
             
             {/* Framed Image Container */}
-            <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-[0_0_40px_rgba(255,59,0,0.2)] group">
+            <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)] group">
               <motion.div
                 key={activeDiscipline.image}
                 initial={{ opacity: 0, scale: 1.05 }}
@@ -134,26 +134,26 @@ export default function Hero() {
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
               </motion.div>
 
               {/* Tag Label on Image */}
-              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between font-mono text-[10px] text-white bg-black/70 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10">
+              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between font-mono text-[10px] text-white bg-slate-900/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10">
                 <span className="uppercase tracking-widest">{activeDiscipline.name}</span>
-                <span className="text-red-500 font-bold">GALWAY, IRELAND</span>
+                <span className="text-red-400 font-bold">GALWAY, IRELAND</span>
               </div>
             </div>
 
             {/* Studio Micro Copy & Email CTA */}
             <div className="space-y-4 font-mono text-xs">
-              <p className="text-zinc-400 text-[11px] leading-relaxed font-sans">
-                Portfolio of <strong className="text-white">{personal.name}</strong> ({personal.pronouns}) — MSc Cybersecurity Risk Management | B.Tech IT | Ex-Intern at {personal.exInternship} | Email: <span className="text-red-400">{personal.email}</span>.
+              <p className="text-slate-600 text-[11px] leading-relaxed font-sans">
+                Portfolio of <strong className="text-slate-900 font-bold">{personal.name}</strong> ({personal.pronouns}) — MSc Cybersecurity Risk Management | B.Tech IT | Ex-Intern at {personal.exInternship} | Email: <a href={`mailto:${personal.email}?subject=Opportunity%20/%20Project%20Inquiry%20-%20Tanisha%20Maulik`} className="text-red-600 font-medium hover:underline">{personal.email}</a>.
               </p>
 
               <div className="pt-2">
                 <a
                   href="#contact"
-                  className="group inline-flex items-center gap-1.5 text-xs font-mono tracking-widest text-white hover:text-red-400 font-bold uppercase transition-colors"
+                  className="group inline-flex items-center gap-1.5 text-xs font-mono tracking-widest text-slate-900 hover:text-red-600 font-bold uppercase transition-colors"
                 >
                   <span>Connect with Tanisha</span>
                   <ArrowUpRight className="w-4 h-4 text-red-500 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

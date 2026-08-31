@@ -4,7 +4,7 @@ export interface Project {
   subtitle: string;
   description: string;
   longDescription?: string;
-  category: 'Cybersecurity' | 'Web Development' | 'AI / Tools' | 'UI / UX';
+  category: 'Cybersecurity' | 'Software Development' | 'AI / Tools' | 'UI / UX';
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
@@ -31,7 +31,7 @@ export interface ExperienceItem {
 export interface CertificationItem {
   id: string;
   title: string;
-  issuer: 'Cisco' | 'IBM' | 'Amazon Web Services (AWS)' | 'SkillUp' | 'NPTEL' | 'RAIT' | 'IELTS Official';
+  issuer: 'EC-Council' | 'Cisco' | 'IBM' | 'Amazon Web Services (AWS)' | 'SkillUp' | 'NPTEL' | 'DY PATIL' | 'IELTS Official';
   issueDate: string;
   credentialId?: string;
   category: 'Cisco' | 'IBM' | 'AWS' | 'Security & IT';
@@ -48,7 +48,7 @@ export const PORTFOLIO_DATA = {
     name: "Tanisha Maulik",
     handle: "@Tanishamaulik",
     pronouns: "She/Her",
-    title: "MSc Cybersecurity Risk Management & Web Developer",
+    title: "MSc Cybersecurity Risk Management & Software Developer",
     tagline: "MSc Cybersecurity Risk Management | B.Tech IT | Aspiring SOC Analyst & Software Developer specializing in threat detection, risk management, network security, and full-stack applications.",
     bioShort: "Cybersecurity & Risk Management post-graduate with hands-on experience in security analysis, networking, and software development. Skilled in CCNA & CEH concepts, risk mitigation, and threat detection.",
     bioFull: "Cybersecurity enthusiast with hands-on experience in networking, security analysis, and software development. Currently pursuing MSc in Cybersecurity Risk Management alongside a B.Tech in IT. Skilled in CCNA and CEH concepts, network troubleshooting, and cybersecurity tools. Experienced through internships in Software Development and Cybersecurity Analysis, as well as freelance CRM and website development projects. Eager to apply and grow my skills in cybersecurity, risk management, and IT. Passionate about threat detection, network security, and incident response, with a long-term goal of becoming a Security Operations Center (SOC) Analyst.",
@@ -58,8 +58,8 @@ export const PORTFOLIO_DATA = {
     github: "https://github.com/Tanishamaulik",
     availabilityStatus: "#OPENTOWORK — Open to SOC Analyst, Risk Management & Software Roles in Ireland / Remote",
     institutionMSc: "University of Galway (NUIG)",
-    institutionBTech: "Ramrao Adik Institute of Technology (RAIT)",
-    cgpaBTech: "8.52 / 10",
+    institutionBTech: "DY Patil University",
+    cgpaBTech: "8.52 / 10 (1:1)",
     exInternship: "DOT POWER PVT LTD",
     nowStatus: {
       currentlyBuilding: "MITM Attack Defense Engine & Dynamic ARP Inspection Lab",
@@ -68,8 +68,8 @@ export const PORTFOLIO_DATA = {
       currentVibe: "Packet analysis, threat mitigation & shipping secure code",
     },
     bentoStats: [
-      { number: "17", label: "Certifications", detail: "Cisco, IBM & AWS" },
-      { number: "8.52", label: "Final B.Tech CGPA", detail: "RAIT IT Graduate" },
+      { number: "18", label: "Certifications", detail: "EC-Council, Cisco & IBM" },
+      { number: "8.52", label: "Final B.Tech CGPA", detail: "DY Patil Graduate" },
       { number: "MSc (NUIG)", label: "Cyber Risk Mgmt", detail: "University of Galway" },
       { number: "3 Live", label: "Freelance Sites", detail: "Production Deployed" },
     ],
@@ -78,13 +78,20 @@ export const PORTFOLIO_DATA = {
   terminalCommands: {
     whoami: "Tanisha Maulik — MSc Cybersecurity Risk Management (NUIG) | B.Tech IT (CGPA 8.52) | Aspiring SOC Analyst based in Galway, Ireland.",
     experience: "Freelance Full Stack Developer | Junior Cybersecurity Analyst & Software Developer Intern at DOT POWER PVT LTD | Internshala Student Partner",
-    certifications: "17 Verified Certs: Cisco (6 Certs), IBM (4 Certs), AWS (Cloud Architecting & Solutions Architecture), IELTS Official, SkillUp, NPTEL, RAIT.",
-    skills: "Cybersecurity: Risk Management, CCNA & CEH concepts, Security Analysis, Threat Mitigation, Snort IDS, Wireshark DPI.\nWeb Dev: React, Next.js, TypeScript, HTML/CSS, CRM Systems, Python, Flutter, Unity AR.",
+    certifications: "18 Certs: C|EH (EC-Council, Ongoing), Cisco (6 Certs), IBM (4 Certs), AWS (Cloud Architecting & Solutions Architecture), IELTS Official, SkillUp, NPTEL, DY PATIL.",
+    skills: "Cybersecurity: Risk Management, CCNA & CEH concepts, Security Analysis, Threat Mitigation, Snort IDS, Wireshark DPI.\nSoftware Dev: React, Next.js, TypeScript, HTML/CSS, CRM Systems, Python, Flutter, Unity AR.",
     contact: "Email: tanishamaulik@gmail.com\nLocation: Galway, County Galway, Ireland\nGitHub: github.com/Tanishamaulik\nLinkedIn: linkedin.com/in/tanisha-maulik-172808377/",
     status: "🟢 #OPENTOWORK: Seeking SOC Analyst, Cybersecurity Risk Management & Software Engineering Roles.",
   },
 
   certifications: [
+    {
+      id: "cert-ceh",
+      title: "C|EH – Certified Ethical Hacker",
+      issuer: "EC-Council",
+      issueDate: "Ongoing",
+      category: "Security & IT",
+    },
     {
       id: "cert-ccna-wireless",
       title: "CCNA: Switching, Routing, and Wireless Essentials",
@@ -200,14 +207,14 @@ export const PORTFOLIO_DATA = {
     {
       id: "cert-sankalp",
       title: "Certificate of Participation for Sankalp",
-      issuer: "RAIT",
+      issuer: "DY PATIL",
       issueDate: "Oct 2025",
       category: "Security & IT",
     },
     {
       id: "cert-technovate",
       title: "TechnoVate 2025 Engineering Certificate",
-      issuer: "RAIT",
+      issuer: "DY PATIL",
       issueDate: "Apr 2025",
       category: "Security & IT",
     },
@@ -311,7 +318,7 @@ export const PORTFOLIO_DATA = {
       macTitle: "entropy-checker.js",
       description: "A client-side web application implementing the Shannon Entropy mathematical formula to provide quantitative, bit-based password security ratings beyond simple complexity rules.",
       longDescription: "Calculates mathematical entropy bits based on character set variance and length. Built with HTML, Tailwind CSS, and JavaScript to deliver instant visual feedback to users.",
-      category: "Web Development",
+      category: "Software Development",
       technologies: ["JavaScript", "Shannon Entropy", "Tailwind CSS", "HTML5", "Authentication Requirements"],
       githubUrl: "https://github.com/Tanishamaulik/password-strength-checker",
       featured: false,
@@ -346,7 +353,7 @@ export const PORTFOLIO_DATA = {
       macTitle: "movie-recommender-flutter",
       description: "A modern Flutter application helping users discover trending movies and personalized TV recommendations using API data and viewing history.",
       longDescription: "Cross-platform mobile application built with Dart & Flutter. Connects to external media APIs, caches search history, and presents dynamic trending recommendations.",
-      category: "Web Development",
+      category: "Software Development",
       technologies: ["Flutter", "Dart", "REST APIs", "Mobile App Engineering", "JSON Parsing"],
       githubUrl: "https://github.com/Tanishamaulik/Movie-Recommender",
       featured: false,
@@ -362,8 +369,8 @@ export const PORTFOLIO_DATA = {
       subtitle: "Augmented Reality Virtual Room & Furniture Placement",
       macTitle: "ar-room-scanner.cs",
       description: "A Unity-based mobile application that scans physical rooms, detects walls and floor surfaces, and allows users to place 3D virtual furniture in real time using AR.",
-      longDescription: "Developed at Ramrao Adik Institute of Technology using C# and Unity AR Foundation. Implements spatial plane detection, raycasting surface alignment, and 3D furniture scaling.",
-      category: "Web Development",
+      longDescription: "Developed at DY Patil University using C# and Unity AR Foundation. Implements spatial plane detection, raycasting surface alignment, and 3D furniture scaling.",
+      category: "Software Development",
       technologies: ["Augmented Reality (AR)", "C#", "Unity", "Plane Detection", "3D Raycasting"],
       githubUrl: "https://github.com/Tanishamaulik/AR-Interior-Design-App-",
       featured: false,
@@ -371,7 +378,7 @@ export const PORTFOLIO_DATA = {
       highlights: [
         "Real-time surface and plane detection using Unity AR Foundation",
         "Interactive 3D furniture raycast placement and rotation controls",
-        "Developed as part of B.Tech IT capstone engineering at RAIT",
+        "Developed as part of B.Tech IT capstone engineering at DY Patil University",
       ],
     },
   ] as Project[],
@@ -444,7 +451,7 @@ export const PORTFOLIO_DATA = {
     },
     {
       id: "exp-msc-galway",
-      period: "Aug 2026 – Aug 2027",
+      period: "Sep 2026 – Aug 2027",
       role: "MSc in Cybersecurity Risk Management",
       company: "University of Galway (NUIG)",
       location: "Galway, Ireland",
@@ -461,12 +468,12 @@ export const PORTFOLIO_DATA = {
       id: "exp-btech-rait",
       period: "Sep 2022 – Jun 2026",
       role: "Bachelor of Technology in Information Technology",
-      company: "Ramrao Adik Institute of Technology (RAIT)",
+      company: "DY Patil University",
       location: "India",
       summary: "Undergraduate degree in Information Technology with specialized coursework in Security, Networks, and Software Engineering.",
-      cgpa: "Final CGPA: 8.52 / 10",
+      cgpa: "Final CGPA: 8.52 / 10 (1:1)",
       bulletPoints: [
-        "Graduated with Final CGPA of 8.52/10 in Information Technology.",
+        "Graduated with Final CGPA of 8.52/10 (1:1) in Information Technology.",
         "Completed comprehensive coursework in Data Communication, Computer Networks, and Operating Systems.",
         "Studied CCNA and CEH security concepts, threat analysis, and cryptography.",
         "Developed AR Interior Design App using Unity & C# as capstone project.",
@@ -504,8 +511,8 @@ export const PORTFOLIO_DATA = {
       ],
     },
     {
-      category: "Web & Software Development",
-      description: "Building responsive frontends, CRM portals, and reliable web systems.",
+      category: "Software Development",
+      description: "Building responsive frontends, CRM portals, and reliable software systems.",
       skills: [
         { name: "React.js / Next.js", tag: "Core Competency" },
         { name: "JavaScript / TypeScript", tag: "Core Competency" },

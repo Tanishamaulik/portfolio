@@ -32,7 +32,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "py-4 bg-black/90 backdrop-blur-md border-b border-white/10 shadow-2xl"
+          ? "py-4 bg-white/85 backdrop-blur-md border-b border-slate-200/80 shadow-sm"
           : "py-6 bg-transparent"
       }`}
     >
@@ -41,10 +41,10 @@ export default function Navbar() {
           {/* Brand Mark */}
           <a
             href="#"
-            className="group flex items-center space-x-3 text-white font-mono text-xs tracking-widest uppercase"
+            className="group flex items-center space-x-3 text-slate-900 font-mono text-xs tracking-widest uppercase"
           >
             <span className="w-2.5 h-2.5 rounded-full bg-red-600 group-hover:scale-125 transition-transform" />
-            <span className="font-bold text-white tracking-widest">
+            <span className="font-bold text-slate-900 tracking-widest">
               TM STUDIO<span className="text-red-500">®</span>
             </span>
           </a>
@@ -55,9 +55,9 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="group text-xs font-mono tracking-widest text-zinc-400 hover:text-white transition-colors duration-200 flex items-center gap-1.5"
+                className="group text-xs font-mono tracking-widest text-slate-600 hover:text-slate-900 transition-colors duration-200 flex items-center gap-1.5"
               >
-                <span className="text-zinc-600 text-[10px] group-hover:text-red-500 transition-colors">
+                <span className="text-slate-400 text-[10px] group-hover:text-red-500 transition-colors">
                   {link.index}
                 </span>
                 <span className="uppercase">{link.name}</span>
@@ -71,7 +71,7 @@ export default function Navbar() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group text-xs font-mono tracking-widest text-white hover:text-red-400 transition-colors flex items-center gap-1 uppercase font-bold"
+              className="group text-xs font-mono tracking-widest text-slate-900 hover:text-red-500 transition-colors flex items-center gap-1 uppercase font-bold"
               title="Chat with Tanisha on WhatsApp (+91 9987010559)"
             >
               <span>Let&apos;s work together</span>
@@ -82,7 +82,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-zinc-400 hover:text-white focus:outline-none"
+            className="lg:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none"
             aria-label="Toggle Navigation Menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6 text-red-500" /> : <Menu className="w-6 h-6" />}
@@ -97,7 +97,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden border-b border-white/10 bg-black/95 backdrop-blur-2xl"
+            className="lg:hidden border-b border-slate-200 bg-white/95 backdrop-blur-2xl shadow-lg"
           >
             <div className="px-6 pt-4 pb-8 space-y-4 font-mono text-xs">
               {navLinks.map((link) => (
@@ -105,7 +105,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center justify-between py-2 text-zinc-300 hover:text-white border-b border-zinc-900 uppercase tracking-widest"
+                  className="flex items-center justify-between py-2 text-slate-700 hover:text-slate-900 border-b border-slate-100 uppercase tracking-widest"
                 >
                   <span>{link.name}</span>
                   <span className="text-red-500 text-[10px]">{link.index}</span>
@@ -117,7 +117,7 @@ export default function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="inline-flex items-center gap-2 text-xs font-mono text-red-500 font-bold uppercase tracking-widest"
+                  className="inline-flex items-center gap-2 text-xs font-mono text-red-600 font-bold uppercase tracking-widest"
                 >
                   <span>Let&apos;s work together</span>
                   <ArrowUpRight className="w-4 h-4" />

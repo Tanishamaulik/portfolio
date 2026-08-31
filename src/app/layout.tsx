@@ -10,7 +10,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: "Tanisha Maulik | MSc Cybersecurity Risk Management & IT Developer",
-  description: "Portfolio of Tanisha Maulik — MSc Cybersecurity Risk Management (NUIG) & B.Tech IT (RAIT). Specializing in threat detection, network security, risk management, and web development.",
+  description: "Portfolio of Tanisha Maulik — MSc Cybersecurity Risk Management (NUIG) & B.Tech IT (DY Patil University). Specializing in threat detection, network security, risk management, and software development.",
   keywords: ["Tanisha Maulik", "Cybersecurity", "Risk Management", "SOC Analyst", "Information Technology", "Galway Ireland", "Next.js", "React"],
   authors: [{ name: "Tanisha Maulik" }],
   icons: {

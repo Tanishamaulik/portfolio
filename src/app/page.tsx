@@ -12,7 +12,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="relative bg-[#000000] min-h-screen text-zinc-100 selection:bg-red-500/30 selection:text-red-200 overflow-hidden font-sans">
+    <div className="relative bg-[#f8fafc] min-h-screen text-slate-900 selection:bg-red-500/20 selection:text-red-700 overflow-hidden font-sans">
       {/* Film Grain Noise Texture */}
       <NoiseOverlay />
 

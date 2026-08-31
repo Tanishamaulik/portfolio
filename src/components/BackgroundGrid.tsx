@@ -44,9 +44,9 @@ export default function BackgroundGrid() {
         mouse.y,
         400
       );
-      gradient.addColorStop(0, "rgba(255, 59, 0, 0.08)");
-      gradient.addColorStop(0.5, "rgba(255, 107, 0, 0.03)");
-      gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
+      gradient.addColorStop(0, "rgba(239, 68, 68, 0.06)");
+      gradient.addColorStop(0.5, "rgba(249, 115, 22, 0.02)");
+      gradient.addColorStop(1, "rgba(248, 250, 252, 0)");
 
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, width, height);
@@ -64,23 +64,23 @@ export default function BackgroundGrid() {
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden bg-black">
+    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden bg-[#f8fafc]">
       {/* Dynamic Canvas Ambient Glow */}
       <canvas ref={canvasRef} className="absolute inset-0 block w-full h-full" />
 
       {/* Editorial Grid Lines Overlay */}
       <div 
-        className="absolute inset-0 opacity-[0.07]"
+        className="absolute inset-0 opacity-[0.4]"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(255, 255, 255, 0.3) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px)`,
           backgroundSize: `80px 80px`,
         }}
       />
 
       {/* Crimson Ambient Light Orbs (Matching Reference Image) */}
-      <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-red-600/20 rounded-full blur-[160px] animate-pulse-glow" />
-      <div className="absolute top-1/2 -right-40 w-[500px] h-[500px] bg-orange-600/15 rounded-full blur-[180px] animate-pulse-glow" style={{ animationDelay: '2s' }} />
-      <div className="absolute -bottom-40 left-1/3 w-[600px] h-[600px] bg-red-700/15 rounded-full blur-[170px] animate-pulse-glow" style={{ animationDelay: '4s' }} />
+      <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-red-400/10 rounded-full blur-[160px] animate-pulse-glow" />
+      <div className="absolute top-1/2 -right-40 w-[500px] h-[500px] bg-orange-400/8 rounded-full blur-[180px] animate-pulse-glow" style={{ animationDelay: '2s' }} />
+      <div className="absolute -bottom-40 left-1/3 w-[600px] h-[600px] bg-rose-400/8 rounded-full blur-[170px] animate-pulse-glow" style={{ animationDelay: '4s' }} />
     </div>
   );
 }

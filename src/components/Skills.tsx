@@ -15,13 +15,13 @@ export default function Skills() {
   const getTagColor = (tag: string) => {
     switch (tag) {
       case "Core Competency":
-        return "bg-red-500/15 text-red-400 border-red-500/40 shadow-[0_0_10px_rgba(255,59,0,0.2)]";
+        return "bg-red-50 text-red-600 border-red-200 shadow-sm";
       case "Hands-on":
-        return "bg-amber-500/15 text-amber-400 border-amber-500/40 shadow-[0_0_10px_rgba(255,107,0,0.2)]";
+        return "bg-amber-50 text-amber-700 border-amber-200 shadow-sm";
       case "Cert Concepts":
-        return "bg-purple-500/15 text-purple-400 border-purple-500/40 shadow-[0_0_10px_rgba(168,85,247,0.2)]";
+        return "bg-purple-50 text-purple-700 border-purple-200 shadow-sm";
       default:
-        return "bg-zinc-800 text-zinc-400 border-zinc-700";
+        return "bg-slate-100 text-slate-700 border-slate-200";
     }
   };
 
@@ -50,38 +50,38 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="py-24 relative z-10 border-t border-white/10">
+    <section id="skills" className="py-24 relative z-10 border-t border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Editorial Section Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-14">
-          <div className="lg:col-span-3 font-mono text-xs text-zinc-400">
-            <span className="text-3xl font-extrabold text-white block mb-1 font-sans">005</span>
-            <span className="text-zinc-500 uppercase tracking-widest text-[10px]">TECHNICAL CAPABILITIES</span>
+          <div className="lg:col-span-3 font-mono text-xs text-slate-500">
+            <span className="text-3xl font-extrabold text-slate-900 block mb-1 font-sans">005</span>
+            <span className="text-slate-400 uppercase tracking-widest text-[10px] font-bold">TECHNICAL CAPABILITIES</span>
           </div>
 
           <div className="lg:col-span-9 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight pb-1.5 leading-snug bg-gradient-to-r from-slate-950 via-slate-900 to-orange-600 bg-clip-text text-transparent">
               Tools, Stacks & Security Systems
             </h2>
 
             {/* Interactive Filter Pills */}
-            <div className="flex flex-wrap items-center gap-1.5 bento-card p-1 rounded-xl border-white/10 font-mono text-xs">
+            <div className="flex flex-wrap items-center gap-1.5 bento-card p-1 rounded-xl border-slate-200 font-mono text-xs">
               {skillFilterTabs.map((tab) => (
                 <button
                   key={tab}
                   onClick={() => setActiveFilter(tab)}
                   className={`relative px-3 py-1.5 rounded-lg transition-all duration-200 uppercase tracking-wider text-[11px] ${
                     activeFilter === tab
-                      ? "text-white bg-white/10 border-red-500/80 font-bold"
-                      : "text-zinc-400 hover:text-white hover:bg-white/5"
+                      ? "text-white bg-slate-900 font-bold shadow-sm"
+                      : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
                   }`}
                 >
                   {tab}
                   {activeFilter === tab && (
                     <motion.div
                       layoutId="activeSkillTab"
-                      className="absolute inset-0 border border-red-500/50 rounded-lg pointer-events-none"
+                      className="absolute inset-0 border border-slate-900 rounded-lg pointer-events-none"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}
@@ -115,23 +115,23 @@ export default function Skills() {
               <motion.div
                 key={group.category}
                 variants={cardVariants}
-                className="editorial-card p-6 rounded-2xl flex flex-col justify-between group/card relative overflow-hidden"
+                className="editorial-card p-6 rounded-2xl flex flex-col justify-between group/card relative overflow-hidden bg-white border border-slate-200 shadow-sm"
               >
                 {/* Glowing Top Accent Line */}
-                <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-red-500 via-orange-500 to-transparent opacity-40 group-hover/card:opacity-100 transition-opacity" />
+                <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-red-500 via-orange-500 to-transparent opacity-60 group-hover/card:opacity-100 transition-opacity" />
 
                 <div>
-                  <div className="pb-3 mb-4 border-b border-white/10 font-mono text-xs flex items-center justify-between">
-                    <h3 className="font-bold text-white uppercase tracking-wider flex items-center gap-2">
+                  <div className="pb-3 mb-4 border-b border-slate-100 font-mono text-xs flex items-center justify-between">
+                    <h3 className="font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
                       <Terminal className="w-4 h-4 text-red-500" />
                       {group.category}
                     </h3>
-                    <span className="text-red-500 font-mono text-[10px] font-bold">
+                    <span className="text-red-600 font-mono text-[10px] font-bold">
                       {displaySkills.length} Items
                     </span>
                   </div>
 
-                  <p className="text-xs text-zinc-400 mb-6 font-sans leading-relaxed">
+                  <p className="text-xs text-slate-600 mb-6 font-sans leading-relaxed">
                     {group.description}
                   </p>
 
@@ -153,11 +153,11 @@ export default function Skills() {
                             whileHover={{ x: 4, scale: 1.01 }}
                             className={`flex items-center justify-between p-3 rounded-xl border transition-all duration-200 cursor-pointer relative overflow-hidden ${
                               isHovered
-                                ? "bg-zinc-900 border-red-500/60 shadow-[0_0_20px_rgba(255,59,0,0.25)]"
-                                : "bg-black/70 border-white/10 hover:border-white/20"
+                                ? "bg-white border-red-400 shadow-md"
+                                : "bg-slate-50 border-slate-200 hover:border-slate-300"
                             }`}
                           >
-                            {/* Hover Neon Pulse Accent */}
+                            {/* Hover Pulse Accent */}
                             {isHovered && (
                               <motion.div
                                 layoutId="hoverHighlight"
@@ -166,13 +166,13 @@ export default function Skills() {
                               />
                             )}
 
-                            <span className="text-zinc-200 font-sans text-xs font-semibold z-10 flex items-center gap-2">
+                            <span className="text-slate-800 font-sans text-xs font-semibold z-10 flex items-center gap-2">
                               {skill.tag === "Core Competency" ? (
                                 <Flame className="w-3.5 h-3.5 text-red-500" />
                               ) : skill.tag === "Hands-on" ? (
                                 <Wrench className="w-3.5 h-3.5 text-amber-500" />
                               ) : (
-                                <ShieldCheck className="w-3.5 h-3.5 text-purple-400" />
+                                <ShieldCheck className="w-3.5 h-3.5 text-purple-600" />
                               )}
                               {skill.name}
                             </span>
