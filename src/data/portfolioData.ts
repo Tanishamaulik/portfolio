@@ -80,7 +80,7 @@ export const PORTFOLIO_DATA = {
     experience: "Freelance Full Stack Developer | Junior Cybersecurity Analyst & Software Developer Intern at DOT POWER PVT LTD | Internshala Student Partner",
     certifications: "18 Certs: C|EH (EC-Council, Ongoing), Cisco (6 Certs), IBM (4 Certs), AWS (Cloud Architecting & Solutions Architecture), IELTS Official, SkillUp, NPTEL, DY PATIL.",
     skills: "Cybersecurity: Risk Management, CCNA & CEH concepts, Security Analysis, Threat Mitigation, Snort IDS, Wireshark DPI.\nSoftware Dev: React, Next.js, TypeScript, HTML/CSS, CRM Systems, Python, Flutter, Unity AR.",
-    contact: "Email: tanishamaulik@gmail.com\nLocation: Galway, County Galway, Ireland\nGitHub: github.com/Tanishamaulik\nLinkedIn: linkedin.com/in/tanisha-maulik-172808377/",
+    contact: "Email: tanishamaulik@gmail.com\nWhatsApp: +353 85 172 2445\nLocation: Galway, County Galway, Ireland\nGitHub: github.com/Tanishamaulik\nLinkedIn: linkedin.com/in/tanisha-maulik-172808377/",
     status: "🟢 #OPENTOWORK: Seeking SOC Analyst, Cybersecurity Risk Management & Software Engineering Roles.",
   },
 

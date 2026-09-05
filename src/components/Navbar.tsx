@@ -18,7 +18,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // WhatsApp Link
-  const whatsappUrl = "https://wa.me/919987010559?text=Hi%20Tanisha%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you!";
+  const whatsappUrl = "https://wa.me/353851722445?text=Hi%20Tanisha%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you!";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -72,7 +72,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               className="group text-xs font-mono tracking-widest text-slate-900 hover:text-red-500 transition-colors flex items-center gap-1 uppercase font-bold"
-              title="Chat with Tanisha on WhatsApp (+91 9987010559)"
+              title="Chat with Tanisha on WhatsApp (+353 85 172 2445)"
             >
               <span>Let&apos;s work together</span>
               <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform text-red-500" />

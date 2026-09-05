@@ -25,7 +25,7 @@ export default function Contact() {
   const emailSubject = encodeURIComponent("Opportunity / Project Inquiry - Tanisha Maulik");
   const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${personal.email}&su=${emailSubject}`;
   const mailtoUrl = `mailto:${personal.email}?subject=${emailSubject}`;
-  const whatsappUrl = "https://wa.me/919987010559?text=Hi%20Tanisha%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you!";
+  const whatsappUrl = "https://wa.me/353851722445?text=Hi%20Tanisha%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you!";
 
   const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     confetti({
@@ -103,7 +103,7 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group/link px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white transition-all flex items-center gap-2 font-bold shadow-md"
-                  title="Chat on WhatsApp (+91 9987010559)"
+                  title="Chat on WhatsApp (+353 85 172 2445)"
                 >
                   <WhatsappIcon className="w-4 h-4 text-white" />
                   <span>WhatsApp Chat</span>
